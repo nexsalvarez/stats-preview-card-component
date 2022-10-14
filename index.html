@@ -4,31 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Stats preview card component</title>
   <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
   <main>
-    <div>
+    <div class="preview-card-container">
       <picture>
         <img src="./images/image-header-mobile.jpg" alt="Women at work">
       </picture>
-      <div>
-        <h1>Get insights that help your business grow.</h1>
-        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-        <div>
+      <div class="preview-card--info">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p class="card--info-p">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div class="data-container">
           <div>
-            <p>10k+</p>
-            <p>companies</p>
+            <p class="data--number">10k+</p>
+            <p class="data--type">companies</p>
           </div>
-          <div>
-            <p>314</p>
-            <p>templates</p>
+          <div class="data-container">
+            <p class="data--number">314</p>
+            <p class="data--type">templates</p>
           </div>
-          <div>
-            <p>12m+</p>
-            <p>queries</p>
+          <div class="data-container">
+            <p class="data--number">12m+</p>
+            <p class="data--type">queries</p>
           </div>
         </div>
       </div>
