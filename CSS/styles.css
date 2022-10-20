@@ -3,7 +3,7 @@
     --dark-desaturated-blue: hsl(244, 38%, 16%);
     --soft-violet: hsl(277, 64%, 61%);
     --white: hsl(0, 0%, 100%);
-    --slightly-paragraph: hsl(0, 0%, 100%);
+    --slightly-paragraph: hsla(0, 0%, 100%, 0.75);
     --slightly-headings: hsla(0, 0%, 100%, 0.6);
     --md: 1.5rem;
 }
@@ -25,7 +25,7 @@ main {
     display: grid;
     place-content: center;
     background-color: var(--very-dark-blue);
-    padding: 0 20px;
+    padding: 20px;
     overflow: hidden;
 }
 
@@ -33,7 +33,7 @@ main {
 
 .preview-card-container {
     width: 335px;
-    height: 80vh;
+    height: auto;
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr;
@@ -76,4 +76,35 @@ main {
     color: var(--slightly-paragraph);
     text-align: center;
     padding: 0 8px;
+}
+.data-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+.data-container .data-container-box {
+    width: auto;
+    height: auto;
+    margin: 12px 0;
+}
+.data-container-box .data--number {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    text-align: center;
+    color: var(--white);;
+}
+.data-container-box .data--type {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--slightly-headings);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
