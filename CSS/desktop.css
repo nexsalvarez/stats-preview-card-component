@@ -1,0 +1,44 @@
+.preview-card-container {
+    width: 75vw;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.preview-card--info {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 40px 80px;
+}
+.preview-card-container picture {
+    grid-column: 2;
+}
+.preview-card--info h1 {
+    font-size: 3.6rem;
+    line-height: 4rem;
+    text-align: start;
+}
+.preview-card--info .card--info-p {
+    text-align: start;
+    padding: 0 36px 0 0;
+    margin-top: 12px;
+}
+.data-container {
+    width: 86%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.data-container-box .data--number {
+    text-align: start;
+}
+.data-container-box .data--type {
+    font-size: 1.3rem;
+    text-align: start;
+    letter-spacing: 0.1rem;
+}
+footer {
+    padding: 0;
+}
